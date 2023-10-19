@@ -1,5 +1,6 @@
 package org.example.validaciones;
 
+import java.time.LocalDate;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -50,7 +51,7 @@ public class ValidacionAfiliado {
             return false;
         }
     }
-    public Boolean validadDocumentos(String documento)throws Exception{
+    public Boolean validarDocumentos(String documento)throws Exception{
         if (documento.length()< 7 || documento.length() > 10) {
             throw new Exception("el documento debe tener entre 7 y 10 caracteres numericos");
         }
@@ -105,6 +106,11 @@ public class ValidacionAfiliado {
             System.out.println("no tenemos coincidencia");
             return false;
         }
+    }
+
+    public void trabajarFechas(){
+        LocalDate fechaSistema = LocalDate.now();
+        System.out.println(fechaSistema);
     }
 }
 
