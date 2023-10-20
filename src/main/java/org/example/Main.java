@@ -44,7 +44,6 @@ public class Main {
         System.out.println("Unidad medida valida: " + unidadMedidaValidoS);
 
         ValidacionAfiliado validacionAfiliado = new ValidacionAfiliado();
-        validacionAfiliado.trabajarFechas();
 
         LocalDate fechaSistema = LocalDate.now();
         System.out.println(fechaSistema);

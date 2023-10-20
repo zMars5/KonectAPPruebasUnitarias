@@ -1,9 +1,12 @@
 package org.example.validaciones;
 
+import org.example.utilidades.Utilidad;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ValidacionSignoVital {
+    Utilidad utilidad = new Utilidad();
     public ValidacionSignoVital() {
     }
     public Boolean validarId(Integer id) throws Exception {
